@@ -1,0 +1,56 @@
+html{
+    font-size:20px;
+  }
+  
+  html,
+  body {
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+  }
+  
+  #bg-initial{
+    background: #eaafc8;
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
+    background: linear-gradient(to right, #eaafc8, #654ea3);
+    width:100vw;
+    height: 100vw;
+    padding: 50px;
+    overflow: hidden;
+  }
+  
+  *{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .news{
+    margin: 20px;
+    border: 20px;
+    background: #F7CFF5;
+    width: 350px;
+    height: auto;
+    padding: 25px;
+    float: left;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  
+  .imageshort{
+    width: 300px;
+    height: 200px;
+  }
+  
+  .imagelong{
+    width: 300px;
+    height: 320px;
+  }
+  
+  h1 {
+    font-size:30px;
+  }
+  
+  time {
+    font-size:14px;
+    font-style: italic;
+  }
