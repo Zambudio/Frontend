@@ -1,0 +1,163 @@
+/* Estilos generales */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    align-content: flex-start;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+hr {
+    background-color: black;
+    width: 80%;
+}
+
+
+/* Estilos de la sección izquierda */
+
+.left-column {
+    width: 30%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    background-color: grey;
+}
+
+.foto {
+    max-width: 100%;
+    height: auto;
+}
+
+.profile-info,
+.address-info,
+.contact-info {
+    margin-bottom: 20px;
+
+}
+
+.profile-info h2,
+.address-info h2,
+.contact-info h2,
+.skills-info h2 {
+    color: white;
+}
+
+.skills-info {
+    margin-top: 20px;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    height: 25px;
+    margin-bottom: 5px;
+    width: 90%;
+    padding: auto;
+}
+
+.progress {
+    background-color: blue;
+    height: 100%;
+    color: white;
+    text-align: left;
+
+}
+
+/* Estilos de la sección derecha */
+
+.right-column {
+    width: 50%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.name-info {
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.education-info,
+.experience-info,
+.other-info,
+.skills-info {
+    margin-bottom: 20px;
+}
+
+.date {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+.school,
+.position {
+    font-weight: bold;
+}
+
+.degree,
+.location {
+    font-style: italic;
+}
+
+/* Estilos para habilidades y conocimientos */
+
+.skills ul,
+.skills li,
+.skills li:before {
+    margin: 0;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 5px;
+}
+
+.other-info ul,
+.other-info li,
+.other-info li:before {
+    margin: 0;
+    padding: 0;
+}
+
+.other-info li {
+    margin-bottom: 5px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img {
+    width: 18%;
+    margin-right: 2%;
+}

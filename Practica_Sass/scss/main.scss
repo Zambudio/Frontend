@@ -1,0 +1,150 @@
+/* comando consola para importar:
+    sass scss/main.scss css/main.css
+*/
+
+@import 'variables';
+
+
+* {
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+body {
+    background-image: url(https://acortar.link/FqJES6);
+    background-color: $background-color;
+    margin: 20px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// encabezado
+h1 {
+    color: white;
+    background-color: $primary-color;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: block;
+    margin: 30px auto;
+    width: fit-content;
+    text-align: center;
+}
+
+// tablero
+#kanban {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// columnas
+.column {
+    margin-right: 20px;
+    background-color: $secondary-color;
+    border-radius: 20px;
+    width: calc(33.33% - 15px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: stretch;
+    overflow-y: auto;
+
+    &:first-child {
+        margin-right: 20px;
+    }
+
+}
+
+// tarjetas
+.card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);
+    margin-bottom: 10px;
+    padding: 15px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: $text-color;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 14px;
+        color: $text-color;
+        margin-top: 5px;
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: $white-color;
+
+        .iconx {
+            background-color: black;
+        }
+    }
+
+    .iconx {
+        background-color: $red-color;
+        border-radius: 50%;
+        text-align: center;
+        color: $white-color;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        width: 20px;
+        float: right;
+        display: block;
+
+        &:hover {
+            background-color: black;
+        }
+    }
+}
+
+// etiquetas
+.tags {
+    padding: 2px;
+    font-size: 18px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .tag {
+        display: inline-block;
+        background-color: $gray-light-color;
+        color: $text-color;
+        border-radius: 50px;
+        font-size: 15px;
+        padding: 5px;
+        width: 10%;
+        text-align: center;
+
+        &.front {
+            background-color: $green-color;
+            color: $white-color;
+        }
+
+        &.back {
+            background-color: $orange-color;
+            color: $white-color;
+        }
+
+        &.device {
+            background-color: $yellow-color;
+            color: $white-color;
+        }
+    }
+}
